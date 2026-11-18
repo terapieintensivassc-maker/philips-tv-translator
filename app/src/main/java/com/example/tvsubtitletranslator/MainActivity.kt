@@ -81,7 +81,7 @@ class MainActivity : Activity(), MicCapture.Listener {
         controls.addView(makeButton("SRT") { exportSrt() })
         addressInput = EditText(this).apply {
             hint = "Introdu adresa site-ului (https://...)"
-            singleLine = true
+            setSingleLine(true)
             textSize = 14f
             setTextColor(0xFFFFFFFF.toInt())
             setHintTextColor(0xFFCCCCCC.toInt())
